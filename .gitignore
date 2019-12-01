@@ -1,1 +1,4 @@
 *.joblib
+venv/
+.vscode/
+praktikum.code-workspace
