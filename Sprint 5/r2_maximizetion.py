@@ -19,7 +19,8 @@ print(model.score(features_valid, target_valid))
 for min_samples_leaf in range(2, 20, 1):
     model = RandomForestRegressor(n_estimators=20, max_depth=12, random_state=12345, min_samples_leaf=min_samples_leaf)
     model.fit(features_train, target_train)
-    print('min_samples_leaf=', min_samples_leaf, '| mae=', mean_absolute_error(features_valid, target_valid))
+    predicted_valid = model.predict(features_valid)
+    print('min_samples_leaf=', min_samples_leaf, '| mae=', mean_absolute_error(predicted_valid, target_valid))
 
 # model = RandomForestRegressor(n_estimators=100, max_depth=12, random_state=12345, min_samples_leaf=7)
 # model.fit(features_train, target_train)
