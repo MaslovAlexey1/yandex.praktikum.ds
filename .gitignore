@@ -2,3 +2,4 @@
 venv/
 .vscode/
 praktikum.code-workspace
+.DS_Store
