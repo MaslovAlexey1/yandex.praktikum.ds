@@ -4,3 +4,4 @@ venv/
 praktikum.code-workspace
 .DS_Store
 *.csv
+*.jpg
